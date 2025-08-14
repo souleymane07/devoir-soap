@@ -1,0 +1,58 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://com.groupeisi/devoirsoap/classes"
+           targetNamespace="http://com.groupeisi/devoirsoap/classes" elementFormDefault="qualified">
+
+    <xs:element name="getClasseRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getClasseResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="classe" type="tns:classe" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getAllClassesRequest">
+        <xs:complexType/>
+    </xs:element>
+
+    <xs:element name="getAllClassesResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="classes" type="tns:classe" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="saveClasseRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="className" type="xs:string"/>
+                <xs:element name="description" type="xs:string"/>
+                <xs:element name="sectorId" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="saveClasseResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="classe" type="tns:classe"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="classe">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="className" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

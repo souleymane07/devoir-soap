@@ -1,0 +1,55 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://com.groupeisi/devoirsoap/sectors"
+           targetNamespace="http://com.groupeisi/devoirsoap/sectors" elementFormDefault="qualified">
+
+    <xs:element name="getSectorRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getSectorResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sector" type="tns:sector" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getAllSectorsRequest">
+        <xs:complexType/>
+    </xs:element>
+
+    <xs:element name="getAllSectorsResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sectors" type="tns:sector" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="saveSectorRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="saveSectorResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sector" type="tns:sector"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="sector">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="name" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

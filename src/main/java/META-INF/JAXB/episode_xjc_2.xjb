@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.3.2 
+Voir <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+Généré le : 2025.08.09 à 12:12:40 PM GMT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://com.groupeisi/devoirsoap/classes">
+    <schemaBindings map="false">
+      <package name="com.groupeisi.devoirsoap.models"/>
+    </schemaBindings>
+    <bindings scd="tns:getClasseRequest">
+      <class ref="com.groupeisi.devoirsoap.models.GetClasseRequest"/>
+    </bindings>
+    <bindings scd="tns:getClasseResponse">
+      <class ref="com.groupeisi.devoirsoap.models.GetClasseResponse"/>
+    </bindings>
+    <bindings scd="~tns:classe">
+      <class ref="com.groupeisi.devoirsoap.models.Classe"/>
+    </bindings>
+    <bindings scd="tns:getAllClassesRequest">
+      <class ref="com.groupeisi.devoirsoap.models.GetAllClassesRequest"/>
+    </bindings>
+    <bindings scd="tns:getAllClassesResponse">
+      <class ref="com.groupeisi.devoirsoap.models.GetAllClassesResponse"/>
+    </bindings>
+    <bindings scd="tns:saveClasseRequest">
+      <class ref="com.groupeisi.devoirsoap.models.SaveClasseRequest"/>
+    </bindings>
+    <bindings scd="tns:saveClasseResponse">
+      <class ref="com.groupeisi.devoirsoap.models.SaveClasseResponse"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://com.groupeisi/devoirsoap/sectors">
+    <schemaBindings map="false">
+      <package name="com.groupeisi.devoirsoap.models"/>
+    </schemaBindings>
+    <bindings scd="tns:getSectorRequest">
+      <class ref="com.groupeisi.devoirsoap.models.GetSectorRequest"/>
+    </bindings>
+    <bindings scd="tns:getSectorResponse">
+      <class ref="com.groupeisi.devoirsoap.models.GetSectorResponse"/>
+    </bindings>
+    <bindings scd="~tns:sector">
+      <class ref="com.groupeisi.devoirsoap.models.Sector"/>
+    </bindings>
+    <bindings scd="tns:getAllSectorsRequest">
+      <class ref="com.groupeisi.devoirsoap.models.GetAllSectorsRequest"/>
+    </bindings>
+    <bindings scd="tns:getAllSectorsResponse">
+      <class ref="com.groupeisi.devoirsoap.models.GetAllSectorsResponse"/>
+    </bindings>
+    <bindings scd="tns:saveSectorRequest">
+      <class ref="com.groupeisi.devoirsoap.models.SaveSectorRequest"/>
+    </bindings>
+    <bindings scd="tns:saveSectorResponse">
+      <class ref="com.groupeisi.devoirsoap.models.SaveSectorResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
