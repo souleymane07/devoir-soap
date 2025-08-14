@@ -19,7 +19,7 @@ jaxb2-maven-plugin : 2.5.0
 <img width="1175" height="281" alt="image" src="https://github.com/user-attachments/assets/6b4745aa-8b4b-4f26-8311-fa897842ffe0" />
 
 
---------------- Tests pour Classes ------------------
+----------------------------------------------------- Tests pour Classes -----------------------------------------
 
 1- getAllClasses
 <img width="1173" height="669" alt="image" src="https://github.com/user-attachments/assets/ae8c81ee-4da7-451d-a4c6-776066b4c03e" />
