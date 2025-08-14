@@ -7,7 +7,7 @@ Maven : 3.9.11
 Spring Boot : 3.5.4
 jaxb2-maven-plugin : 2.5.0
 
---------------- Tests pour Sectors ------------------
+---------------------------------------------------Tests pour Sectors ----------------------------------------
 
 1- getAllSectors
 <img width="1177" height="463" alt="image" src="https://github.com/user-attachments/assets/20c2815c-79d1-4407-b497-aa88068c1cfe" />
